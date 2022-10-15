@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" >
+
+        h1 {
+            position: absolute;
+            transform: (2,8);
+            color: #BFB96A;
+            font-family: 'roboto';
+            font-size: 3vw;
+            z-index: 3;
+            width: 30%;
+            margin-top: 15vw;
+            margin-left: 25vw;
+            letter-spacing: 0.5vw;
+        }
+
+        body {
+            background-color: #BFB96A;
+            font-family: 'roboto';
+            margin-left: 15vw;
+            margin-right: 15vw;
+        }
+
+        .logo {
+            position: relative; 
+            /* element parent en relatif, enfant en absolu */
+            width: 60vw; 
+            height: 21vw;
+            background-size: 100%;
+        }
+
+        #footer-image {
+            position: absolute;
+            opacity: 0.8;
+            z-index: 1;
+            width: 70vw;
+            height: 21vw;
+            background-size: 100%;
+        }
+
+        #footer-logo {
+            margin: auto;
+            position: absolute;
+            margin-left: 20vw;
+            top: 30%; /* positionnement relatif */
+            opacity: 1;
+            z-index: 2; /* superposition */
+            width: 50%;
+            
+        }
+
+        #intro {
+            color: #BFB96A;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #322D2D;
+            /*border: 1px solid red;*/
+        }
+
+        #intro-title {
+            border-top: 2px solid #BFB96A;
+            border-bottom: 2px solid #BFB96A;
+            letter-spacing: 0.2vw; /* espacement entre les lettres */
+            line-height: 4vw;
+        }
+
+        p {
+            margin-left: 10vw;
+            margin-right: 10vw;
+            line-height: 2.5vw; /* espacement entre les lignes */
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img id="footer-image" src="ressources/header.jpg">
+            <img id="footer-logo"  src="ressources/logoheader.png">
+            <h1>BIENVENUE</h1>
+        </div>
+    </header>
+    <section id="intro">
+            <h2 id="intro-title">INTRO</h2>
+                <p>
+                    Le cinéma est un art du spectacle. En français, il est couramment désigné comme le « 
+                    septième art », d'après l'expression du critique Ricciotto Canudo dans les années 19201. 
+                    L’art cinématographique se caractérise par le spectacle proposé au public sous la forme 
+                    d’un film, c’est-à-dire d’un récit (fictionnel ou documentaire), véhiculé par un support 
+                    (pellicule souple, bande magnétique, contenant numérique) qui est enregistré puis lu par 
+                    un mécanisme continu ou intermittent qui crée l’illusion d’images en mouvement, ou par 
+                    un enregistrement et une lecture continus de données informatiques.
+                </p> 
+    </section>
+    
+</body>
+
+
+
+</html>
+
