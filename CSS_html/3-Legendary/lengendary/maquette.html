@@ -1,123 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" >
+    <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link id="screen" rel="stylesheet" href="style_desk.css" type="text/css" media="screen" /> 
-    <script
-  src="https://code.jquery.com/jquery-3.6.1.js"
-  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-  crossorigin="anonymous"></script>   
+    <link id="screen" rel="stylesheet" href="style_desk.css" type="text/css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <button id="open" style="position: fixed; z-index: 3; opacity: 0.5;">Ouvrir CSS DEbug</button>
-    
-    <nav style="position: fixed; z-index: 3; opacity: 0.7;">
-        <div>
-            <label> Réinitialiser CSS :</label>
-            <button id="css_reset">CSS_reset</button>
-            <div>
-                <label for="border-select">Afficher bordures :</label>
-
-                <select name="border" id="border-select">
-                    <option value="">--Please choose an option--</option>
-                    <option value="div">Div</option>
-                    <option value="section">Section</option>
-                    <option value="p">paragraphe</option>
-                    <option value="img">image</option>
-                </select>
+    <main>
+        <header>
+            <div class="logo">
+                <img id="header-image" src="ressources/header.jpg">
+                <img id="header-logo" src="ressources/logoheader.png">
+                <h1>BIENVENUE</h1>
             </div>
-            
-            <div  id="mouse-parent">
-                <label>Coords du Curseur :</label>
-                <button id="position">Afficher</button>
-                <button id="hide">Cacher</button>
-                <div>
-                    <span style="text-align: center;" id="mouse-pos"></span>
-                </div>
-            </div>
-
-            <div>
-                <fieldset>
-                    <legend>Choisissez l'élément:</legend>
-                    <div>
-                      <input type="checkbox" id="check_div" name="check_div">
-                      <label for="check_div">div</label>
-                    </div>
-                
-                    <div>
-                      <input type="checkbox" id="check_p" name="check_p">
-                      <label for="check_p">paragraphe</label>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" id="check_image" name="check_image">
-                        <label for="image">Images</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" id="check_section" name="check_section">
-                        <label for="section">Sections</label>
-                      </div>
-                </fieldset>
-            </div>
-            
-
-            <div>
-                <button id="close" style="opacity: 1.3;">Fermer</button>
-            </div>
-            
-        </div>
-        <h6 style="margin-right: 2vw; padding-top: 6vw; ">Css-debug-tool, Fred G - 2022</h6>
-    </nav>
-    <header>
-        <div class="logo">
-            <img id="header-image" src="ressources/header.jpg">
-            <img id="header-logo"  src="ressources/logoheader.png">
-            <h1>BIENVENUE</h1>
-        </div>
-    </header>
-    <section id="intro">
-            <h2 id="intro-title">INTRO</h2>
+        </header>
+        <div id="sub-main">
+            <section id="intro">
+                <h2 id="intro-title">INTRO</h2>
                 <p>
-                    Le cinéma est un art du spectacle. En français, il est couramment désigné comme le « 
-                    septième art », d'après l'expression du critique Ricciotto Canudo dans les années 19201. 
-                    L’art cinématographique se caractérise par le spectacle proposé au public sous la forme 
-                    d’un film, c’est-à-dire d’un récit (fictionnel ou documentaire), véhiculé par un support 
-                    (pellicule souple, bande magnétique, contenant numérique) qui est enregistré puis lu par 
-                    un mécanisme continu ou intermittent qui crée l’illusion d’images en mouvement, ou par 
+                    Le cinéma est un art du spectacle. En français, il est couramment désigné comme le «
+                    septième art », d'après l'expression du critique Ricciotto Canudo dans les années 19201.
+                    L’art cinématographique se caractérise par le spectacle proposé au public sous la forme
+                    d’un film, c’est-à-dire d’un récit (fictionnel ou documentaire), véhiculé par un support
+                    (pellicule souple, bande magnétique, contenant numérique) qui est enregistré puis lu par
+                    un mécanisme continu ou intermittent qui crée l’illusion d’images en mouvement, ou par
                     un enregistrement et une lecture continus de données informatiques.
-                </p> 
-    </section>
-    <section>
-        <h2 id="intro-title">INTRO</h2>
-            <p>
-                Le cinéma est un art du spectacle. En français, il est couramment désigné comme le « 
-                septième art », d'après l'expression du critique Ricciotto Canudo dans les années 19201. 
-                L’art cinématographique se caractérise par le spectacle proposé au public sous la forme 
-                d’un film, c’est-à-dire d’un récit (fictionnel ou documentaire), véhiculé par un support 
-                (pellicule souple, bande magnétique, contenant numérique) qui est enregistré puis lu par 
-                un mécanisme continu ou intermittent qui crée l’illusion d’images en mouvement, ou par 
-                un enregistrement et une lecture continus de données informatiques.
-            </p> 
-</section>
-<section>
-    <h2 id="intro-title">INTRO</h2>
-        <p>
-            Le cinéma est un art du spectacle. En français, il est couramment désigné comme le « 
-            septième art », d'après l'expression du critique Ricciotto Canudo dans les années 19201. 
-            L’art cinématographique se caractérise par le spectacle proposé au public sous la forme 
-            d’un film, c’est-à-dire d’un récit (fictionnel ou documentaire), véhiculé par un support 
-            (pellicule souple, bande magnétique, contenant numérique) qui est enregistré puis lu par 
-            un mécanisme continu ou intermittent qui crée l’illusion d’images en mouvement, ou par 
-            un enregistrement et une lecture continus de données informatiques.
-        </p> 
-</section>
+                </p>
+            </section>
+            <section id="avenger">
+                <div id="avenger-title" class="section-title">AVENGERS : INFINITY WAR</div>
+                <p class="section-para">
+                    Alors que les Avengers et leurs alliés ont continué de protéger le monde face à des
+                    menaces bien trop grandes pour être combattues par un héros seul, un nouveau danger
+                    est venu de l'espace : Thanos. Despote craint dans tout l'univers, Thanos a pour objectif
+                    de recueillir les six Pierres d'Infinité, des artefacts parmi les plus puissants de l'univers,
+                    et de les utiliser afin d'imposer sa volonté sur toute la réalité. Tous les combats que les
+                    Avengers ont menés culminent dans cette bataille.
+                </p>
 
-<script src="index.js"></script>
+                <img class="illu" src="ressources/avengers.jpg" alt="avengers">
+
+                <div class="section-footer">Lorem ipsum lorem ipsum </div>
+            </section>
+            <section id="star">
+                <div id="star-title" class="section-title">A STAR IS BORN</div>
+                <p class="section-para">
+                    Star de country un peu oubliée, Jackson Maine découvre Ally, une jeune chanteuse très
+                    prometteuse. Tandis qu'ils tombent follement amoureux l'un de l'autre, Jack propulse
+                    Ally sur le devant de la scène et fait d'elle une artiste adulée par le public. Bientôt
+                    éclipsé par le succès de la jeune femme, il vit de plus en plus de mal son propre déclin…
+
+                </p>
+
+                <img class="illu" src="ressources/star.jpg" alt="avengers">
+
+                <div style="color: white;" class="section-footer">Lorem ipsum lorem ipsum </div>
+            </section>
+            <section id="woman">
+                <div style="color: white;" id="woman-title" class="section-title">WOMAN AT WAR</div>
+                <p class="section-para">
+                    Halla, la cinquantaine, déclare la guerre à l’industrie locale de l’aluminium, qui défigure
+                    son pays. Elle prend tous les risques pour protéger les Hautes Terres d’Islande… Mais la
+                    situation pourrait changer avec l’arrivée inattendue d’une petite orpheline dans sa vie…
+                    Une femme autour de la cinquantaine mène un combat solitaire contre la
+                    multinationale de l'aluminium Rio Tinto qui tente d'étendre son implantation en Islande.
+                    Mais alors qu'elle prépare de nouveaux sabotages de lignes électriques, elle apprend q
+                    u'une demande d'adoption déposée depuis longtemps a abouti et qu'elle va devenir
+                    mère d'une jeune orpheline ukrainienne.
+                </p>
+
+                <img class="illu" src="ressources/woman.jpg" alt="avengers">
+
+                <div style="color: white;" class="section-footer">Lorem ipsum lorem ipsum </div>
+            </section>
+        </div>
+        <footer>
+            <img id="logo-footer" src="ressources/logofooter.png">
+            <p style="color: white;"> LEGENDARY : <span style="color: yellow;">Un site comme plein d'autres
+            </span><br>Aucun droit réservé</p>
+        </footer>
+    </main>
+    <script src="index.js"></script>
 </body>
-</html>
 
+</html>

@@ -1,7 +1,19 @@
-@font-face {
-    font-family: "Matrix";
-    src: url("/static/LcdSolid-VPzB.ttf");
-  }
+main {
+    margin: 0 auto;
+    width: 60vw;
+
+}
+
+img {
+    width: 100%;
+    
+}
+
+.illu {
+    width: 105%;
+    height: 17vw;
+
+}
 
 h1 {
     position: absolute;
@@ -12,15 +24,14 @@ h1 {
     z-index: 3;
     width: 30%;
     margin-top: 15vw;
-    margin-left: 25vw;
+    margin-left: 20vw;
     letter-spacing: 0.5vw;
 }
 
 body {
     background-color: #BFB96A;
-    font-family: 'roboto';
-    margin-left: 15vw;
-    margin-right: 15vw;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 .logo {
@@ -43,7 +54,7 @@ body {
 #header-logo {
     margin: auto;
     position: absolute;
-    margin-left: 18vw;
+    margin-left: 15vw;
     top: 30%; /* positionnement relatif */
     opacity: 1;
     z-index: 2; /* superposition */
@@ -51,14 +62,52 @@ body {
     
 }
 
-#intro {
+section {
     color: #BFB96A;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #322D2D;
     /*border: 1px solid red;*/
+    padding: 3vw 9vw 3vw 9vw;
+    line-height: 2vw;
+}
+
+#intro {
+    align-items: center;
+    text-align: center;
+}
+
+#avenger {
+    background-color: white;
+    color: black;
+    
+}
+
+#star {
+    background-color: #6CBCB3 ;
+    color: black;
+}
+
+#woman {
+    color: white;
+}
+
+.section-title {
+    letter-spacing: 0.2vw; /* espacement entre les lettres */
+    font-weight: 400;
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+}
+
+.section-footer {
+    color: #6CBCB3;
+    font-size: 1vw;
+}
+
+#avenger-title {
+    color: #6CBCB3;
 }
 
 #intro-title {
@@ -69,33 +118,18 @@ body {
 }
 
 p {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    line-height: 2.5vw; /* espacement entre les lignes */
+  
+    line-height: 1.5vw; /* espacement entre les lignes */
+    margin-bottom: 2.5vw;
+    margin-top: 0;
+    font-size: small;
 }
 
-nav {
-    font-family: 'Matrix';
-    font-size: 1.5vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:flex-start;
-    border: 1px solid black;
-    box-shadow: 5px 5px 5px grey;
-    width: auto;
-    color: #00ff41;
-    background-color: #003b00;
-    margin-left: 3vw;
-    margin-right: 2vw;
+footer {
+    background-color: black;
+    padding: 2vw 5vw;
 }
 
-button, option, select {
-    font-family: 'Matrix';
-    font-size: 1.3vw;
-    color: white;
-    background-color: #008f11;
-    box-shadow: 2px 2px 5px #00ff41;
-    padding: 0.4vw;
-    margin: 0.2vw;
+#logo-footer {
+    width: 20%;
 }
