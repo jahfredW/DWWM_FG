@@ -110,7 +110,7 @@ $('#css_reset').click(function(e){
         $("#reset").remove();
         $('#css_reset').html('css_reset');
         $("head").append(
-            $(document.createElement("link")).attr({id: "screen", rel:"stylesheet", type:"text/css", href:"style_desk.css"})
+            $(document.createElement("link")).attr({id: "screen", rel:"stylesheet", type:"text/css", href:"css_debug_tool.css"})
           );
         reset = false;
     }

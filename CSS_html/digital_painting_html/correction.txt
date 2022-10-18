@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="style.css">
+<em> -> blaise italique directement en html
+
+
+
+Comment enlever les marges par défaut : 
+* {
+	box-sizing: border-box;
+} ---> A faire directement ! 
+
+
+
+-------------------------------------
+Comment centrer ? 
+
+margin : 0, auto.
+puis définir une largeur de l'élément par défaut : 
+width : 20vw;

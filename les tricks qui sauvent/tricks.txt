@@ -1,0 +1,5 @@
+Si erreur git : fatal: refusing to merge unrelated histories:
+
+	faire:
+
+git pull origin branchname --allow-unrelated-histories

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="screen" rel="stylesheet" href="css_debug_tool.css" type="text/css" media="screen" /> 
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script> 
+</head>
+
+<body>
+    <button id="open" style="position: fixed; z-index: 3; opacity: 0.5;">Ouvrir CSS DEbug</button>
+    
+    <nav style="position: fixed; z-index: 3; opacity: 0.7;">
+        <div>
+            <label> Réinitialiser CSS :</label>
+            <button id="css_reset">CSS_reset</button>
+            <div>
+                <label for="border-select">Afficher bordures :</label>
+
+                <select name="border" id="border-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="div">Div</option>
+                    <option value="section">Section</option>
+                    <option value="p">paragraphe</option>
+                    <option value="img">image</option>
+                </select>
+            </div>
+            
+            <div  id="mouse-parent">
+                <label>Coords du Curseur :</label>
+                <button id="position">Afficher</button>
+                <button id="hide">Cacher</button>
+                <div>
+                    <span style="text-align: center;" id="mouse-pos"></span>
+                </div>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Choisissez l'élément:</legend>
+                    <div>
+                      <input type="checkbox" id="check_div" name="check_div">
+                      <label for="check_div">div</label>
+                    </div>
+                
+                    <div>
+                      <input type="checkbox" id="check_p" name="check_p">
+                      <label for="check_p">paragraphe</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="check_image" name="check_image">
+                        <label for="image">Images</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="check_section" name="check_section">
+                        <label for="section">Sections</label>
+                      </div>
+                </fieldset>
+            </div>
+            
+
+            <div>
+                <button id="close" style="opacity: 1.3;">Fermer</button>
+            </div>
+            
+        </div>
+        <h6 style="margin-right: 2vw; padding-top: 6vw; ">Css-debug-tool, Fred G - 2022</h6>
+    </nav>
+    
+<script src="CSS_DEBUG_TOOL/index.js"></script>
+</body>
+</html>
+

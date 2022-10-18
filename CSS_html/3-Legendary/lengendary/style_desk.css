@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Matrix";
+    src: url("/static/LcdSolid-VPzB.ttf");
+  }
+
 h1 {
     position: absolute;
     transform: (2,8);
@@ -21,24 +26,24 @@ body {
 .logo {
     position: relative; 
     /* element parent en relatif, enfant en absolu */
-    width: 60vw; 
+    width: auto; 
     height: 21vw;
     background-size: 100%;
 }
 
-#footer-image {
+#header-image {
     position: absolute;
     opacity: 0.8;
     z-index: 1;
-    width: 70vw;
+    width: 100%;
     height: 21vw;
-    background-size: 100%;
+    
 }
 
-#footer-logo {
+#header-logo {
     margin: auto;
     position: absolute;
-    margin-left: 20vw;
+    margin-left: 18vw;
     top: 30%; /* positionnement relatif */
     opacity: 1;
     z-index: 2; /* superposition */
@@ -67,4 +72,30 @@ p {
     margin-left: 10vw;
     margin-right: 10vw;
     line-height: 2.5vw; /* espacement entre les lignes */
+}
+
+nav {
+    font-family: 'Matrix';
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px grey;
+    width: auto;
+    color: #00ff41;
+    background-color: #003b00;
+    margin-left: 3vw;
+    margin-right: 2vw;
+}
+
+button, option, select {
+    font-family: 'Matrix';
+    font-size: 1.3vw;
+    color: white;
+    background-color: #008f11;
+    box-shadow: 2px 2px 5px #00ff41;
+    padding: 0.4vw;
+    margin: 0.2vw;
 }

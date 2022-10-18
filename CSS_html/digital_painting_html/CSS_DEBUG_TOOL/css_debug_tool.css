@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Matrix";
+    src: url("/static/LcdSolid-VPzB.ttf");
+  }
+
+nav {
+    font-family: 'Matrix';
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px grey;
+    width: auto;
+    color: #00ff41;
+    background-color: #003b00;
+    margin-left: 3vw;
+    margin-right: 2vw;
+}
+
+button, option, select {
+    font-family: 'Matrix';
+    color: white;
+    background-color: #008f11;
+    box-shadow: 2px 2px 5px #00ff41;
+    padding: 0.4vw;
+    margin: 0.2vw;
+}
